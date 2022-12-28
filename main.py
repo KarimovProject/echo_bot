@@ -43,7 +43,7 @@ def get_last_update(updates: list)->tuple:
 # Last update id
 last_update_id = get_last_update(get_result())[-1]
 #Send message through loop
-current_update_id = -1 #results[-1]['update_id']
+current_update_id = get_last_update(results)[-1] #results[-1]['update_id']
 
 
 while True:
